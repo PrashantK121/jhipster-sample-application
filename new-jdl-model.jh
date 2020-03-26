@@ -1,0 +1,20 @@
+entity Student{
+	registrationNum  Long,
+    firstName  String,
+    lastName  String,
+    address  Address
+}
+
+entity Address{
+ addressID Long,
+ street String,
+ city String,
+ district String,
+ zipCode Int,
+ landmark String,
+ country String 
+}
+
+relationship OneToOne{
+	Studen{address}t to Address
+}
